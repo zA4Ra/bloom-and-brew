@@ -1,0 +1,397 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAF6E5;
+  font-family: Arial, sans-serif;
+}
+
+.site-header {
+  background-color: #382511;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #FAF6E5;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  justify-content: left;
+}
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #FAF6E5;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #A8BC98;
+}
+
+/*Hero Section*/
+
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 32px;
+
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  min-height: 650px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-label {
+  color: #718765;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  color: #382511;
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.hero-description {
+  color: #685644;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: #382511;
+  color: white;
+  padding: 16px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  background-color: #718765;
+}
+
+.hero-image {
+  flex: 1;
+  
+}
+
+.hero-image img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+/*Menu*/
+
+/* MENU SECTION */
+.menu-section {
+  background-color: #FAF6E5;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.menu-section h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  color: #382511;
+  margin-bottom: 10px;
+}
+
+.menu-section > p {
+  color: #6B705C;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+/* MENU CARD */
+.menu-card {
+  background-color: #fffdf7;
+  width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(56, 37, 17, 0.1);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.menu-card h3 {
+  font-size: 1.5rem;
+  color: #382511;
+  margin: 15px 0 8px;
+}
+
+.menu-card p {
+  font-size: 0.95rem;
+  color: #6B705C;
+  line-height: 1.5;
+}
+
+.menu-card span {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #382511;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.menu-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.filter-btn {
+  padding: 10px 24px;
+  border: 1px solid #382511;
+  border-radius: 25px;
+  background: transparent;
+  color: #382511;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #382511;
+  color: #FAF6E5;
+}
+
+
+/* ABOUT SECTION */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  padding: 100px 10%;
+  background-color: #fffdf7;
+}
+
+.about-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about-label {
+  color: #6B705C;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.about-content h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  color: #382511;
+  margin: 15px 0 25px;
+}
+
+.about-content p {
+  color: #6B705C;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.about-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 28px;
+  background-color: #382511;
+  color: #FAF6E5;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.about-button:hover {
+  background-color: #6B705C;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    grid-template-columns: 1fr;
+    padding: 60px 8%;
+    gap: 30px;
+  }
+
+  .about-image img {
+    height: 300px;
+  }
+}
+
+/* RESERVATIONS */
+
+.reservations {
+  background: #FAF6E5;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.reservations-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.reservations .section-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #71806B;
+  margin-bottom: 18px;
+}
+
+.reservations h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(40px, 6vw, 64px);
+  color: #382511;
+  margin-bottom: 20px;
+}
+
+.reservations-content > p:not(.section-label) {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #665A4D;
+  margin-bottom: 32px;
+}
+
+.reservation-btn {
+  display: inline-block;
+  background: #382511;
+  color: #FAF6E5;
+  padding: 15px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.reservation-btn:hover {
+  background: #66775C;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #382511;
+  color: #FAF6E5;
+  padding: 65px 8% 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 55px;
+}
+
+.footer h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.footer h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.footer p,
+.footer a {
+  color: #D8CFC1;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #FFFFFF;
+}
+
+.footer-bottom {
+  border-top: 1px solid #66513D;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .reservations {
+    padding: 70px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer {
+    padding: 50px 7% 20px;
+  }
+}
