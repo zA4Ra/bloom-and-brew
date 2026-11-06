@@ -395,3 +395,277 @@ body {
     padding: 50px 7% 20px;
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap');
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(3.5rem, 5.5vw, 5.8rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -1.5px;
+}
+
+.hero h1 em {
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Smooth button hover effect */
+.hero a,
+.hero button {
+  transition: background-color 0.3s ease,
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.hero a:hover,
+.hero button:hover {
+  background-color: #6F8063;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(56, 37, 17, 0.18);
+}
+
+.hero a:active,
+.hero button:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero a,
+  .hero button {
+    transition: none;
+  }
+}
+
+/* Bloom & Brew — Premium Menu Cards */
+
+.menu-card {
+  background: #fffdf8;
+  border: 1px solid rgba(56, 37, 17, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(56, 37, 17, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(56, 37, 17, 0.12);
+}
+
+.menu-card img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.menu-card:hover img {
+  transform: scale(1.04);
+}
+
+.menu-card h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.8rem;
+  color: #382511;
+}
+
+.menu-card .price {
+  color: #738668;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-card,
+  .menu-card img {
+    transition: none;
+  }
+}
+.menu-card .price {
+  color: #738668;
+  font-weight: 700;
+}
+.menu-card {
+  overflow: hidden;
+}
+
+.menu-card img {
+  transition: transform 0.35s ease;
+}
+
+.menu-card:hover img {
+  transform: scale(1.03);
+}
+
+
+/* About section polish */
+
+.about img {
+  border-radius: 16px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 35px rgba(56, 37, 17, 0.12);
+}
+
+.about p {
+  line-height: 1.9;
+}
+
+.about a,
+.about button {
+  transition: background-color 0.3s ease,
+              transform 0.3s ease;
+}
+
+.about a:hover,
+.about button:hover {
+  background-color: #738668;
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about img,
+  .about a,
+  .about button {
+    transition: none;
+  }
+}
+
+/* Reservations section polish */
+
+.reservations {
+  background: linear-gradient(
+    135deg,
+    #FAF6E5 0%,
+    #F1E9D8 100%
+  );
+
+  text-align: center;
+  scroll-margin-top: 100px;
+}
+
+.reservations a,
+.reservations button {
+  transition: background-color 0.3s ease,
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.reservations a:hover,
+.reservations button:hover {
+  background-color: #738668;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(56, 37, 17, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reservations a,
+  .reservations button {
+    transition: none;
+  }
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  header nav,
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 16px;
+  }
+
+  /* Logo */
+  .logo {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+
+  /* Navigation links */
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Hero */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 24px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 11vw, 4rem);
+    line-height: 1;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: cover;
+  }
+
+  /* About section */
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 24px;
+  }
+
+  .about img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Menu cards */
+  .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Footer */
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* Small-screen navigation polish */
+@media (max-width: 480px) {
+  header nav ul,
+  .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  header nav a,
+  .navbar a {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 1.7rem;
+  }
+}
